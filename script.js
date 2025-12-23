@@ -1115,3 +1115,11 @@ function initProjectHoverEffects() {
 
 // Panggil function 
 initProjectHoverEffects();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector(".about-bg-text");
+    const text = el.textContent.trim();
+
+    // gandakan teks agar seamless
+    el.textContent = text + "   " + text;
+});
